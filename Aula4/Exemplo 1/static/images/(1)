@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>GameOfTheYear</title>
+    <link rel="icon" href="./images/icone.ico">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+  </head>
+  <body>
+    <!--  Conteúdo principal da página-->
+<main class="container">
+<!--  Criar a area para o logo e o Menu-->
+<header class="cabecalho">
+<!-- criar area da logo -->
+<section id="logo">
+
+<h1><span class="cor-rosa">Vapor</span>WaveTrack</h1>
+</section>
+
+<!-- fim da area da logo -->
+
+<!-- area do menu -->
+<nav id="menu-navegacao">
+  <ul>
+    <li><a href="#">Paint<a/></li>
+    <li><a href="#">Windows<a/></li>
+    <li><a href="#">Lo-fi<a/></li>
+    <li><a href="#">Vaporwave<a/></li>
+  </ul>
+</nav>
+<!-- fim da area do menu -->
+
+</header>
+<!-- fim da area para o logo e o Menu -->
+
+<section class="container-video">
+<iframe src="https://www.youtube.com/embed/dR17U5-VKtw" class="tamanho-video"</iframe>
+
+</section>
+<!-- fim video principal  -->
+
+<!-- divisão em 3 colunas -->
+<section class="noticias">
+
+  <!-- primeira noticia -->
+  <article class="box-noticias">
+    <h2 class"titulo-noticias"> Lo-fi</h2>
+    <p class="texto-noticias">
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    </p>
+  </article>
+  <!-- fim da primeira noticia -->
+
+</section>
+<!-- fim da divisão em 3 colunas -->
+
+</main>
+<!--  Fim do Conteúdo principal da página -->
+  </body>
+</html>

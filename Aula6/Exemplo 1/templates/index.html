@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-br" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="/static/css/01.css">
+    <link rel="stylesheet" href="/static/css/02.css">
+    <title></title>
+  </head>
+  <body>
+
+    <div class="Formulario-Blue">
+
+      {% if not criatura %}
+      <div class="img">
+        <img class="img" src="/static/Blue.gif" alt="">
+      </div>
+      
+      <form class="" action="" method="POST">
+  
+      <div class="input1">
+        <label for="texto">Digite seu Nome: <input type="text" name="nome" value="" placeholder="Nome" id="texto"/></label><br/>
+        <label for="texto">Digite seu Sobrenome: <input type="text" name="sobrenome" value="" placeholder="Sobrenome""texto"/></label><br/>
+      </div>
+  
+      <div class="input2">
+        <label for="radio">Elfo<input type="radio" name="criatura" value="elfo" placeholder="radio" id="radio"/></label>
+        <label for="radio">Orc<input type="radio" name="criatura" value="orc" placeholder="radio" id="radio"/></label>
+        <label for="radio">Hobbit<input type="radio" name="criatura" value="hobbit" placeholder="radio" id="radio"/></label>
+      </div>
+
+      <div class="input2">
+        </br><input class="btn-enviar" type="submit" value="Enviar" name="button"></br>
+      </div>
+      
+
+    </form>
+  
+    {% else %}
+    <div class="Formulario-Blue">
+      {{ nome }} {{ sobrenome }}, voce é um: <b>{{ criatura }}</b>
+    </div>
+  
+    <div class="Formulario-Blue">
+      <img src="{{ imagem }}" width="500px" height="500px" alt="">
+    </div>
+  
+    <div class="Formulario-Blue">
+      <a href="/">jogar novamente</a>
+    </div>
+    </div>
+
+    {% endif %}
+    
+    </body>
+  </html>
+
+  <!-- <form class="input0" action="index.html" method="post">
+    <h1>Formulario Blue</h1>
+
+    <div class="input1">
+      <li><label for="texto">Texto:</label>
+      <input type="text" name="input-texto" value="" placeholder="Digite um texto..." id="texto"/></li>
+    </div>
+
+    <div class="input2">
+      <li><label for="password">Password:</label>
+      <input type="password" name="input-password" value="" id="password"/></li>
+    </div>
+
+    <div class="input3">
+      <li><label for="radio">Radio:</label>
+      <input type="radio" name="input-radio" value="" id="radio"/>
+      <input type="radio" name="input-radio" value=""/>
+      <input type="radio" name="input-radio" value=""/></li>
+    </div>
+
+    <div class="input4">
+      <li><label for="checkbox">Checkbox:</label>
+      <input type="checkbox" name="input-checkbox" value="" id="checkbox"/>
+      <input type="checkbox" name="input-checkbox" value=""/>
+      <input type="checkbox" name="input-checkbox" value=""/></li>
+    </div>
+
+
+    <div class="input5">
+      <li><label for="date">Date:</label>
+      <input type="date" name="input-date" value="" id="date"/></li>
+    </div>
+
+    <div class="input6">
+      <li><label for="time">Time:</label>
+      <input type="time" name="input-date" value="" id="time"/></li>
+    </div>
+
+    <div class="input7">
+    <li><label for="cidade">Cidade:</label>
+      <select class="" name="cidade" id="cidade">
+      <option disabled selected>Selecione...</option>
+      <optgroup label="sul">
+        <option value="">1</option>
+        <option value="">2</option>
+     </optgroup>
+
+     <optgroup label="Sudeste">
+      <option value="">1</option>
+      <option value="">2</option>
+    </optgroup>
+
+    <optgroup label="Norte">
+      <option value="">1</option>
+      <option value="">2</option>
+    </optgroup>
+
+    <optgroup label="Nordeste">
+      <option value="">1</option>
+      <option value="">2</option>
+    </optgroup>
+
+    <optgroup label="Centro-Oeste">
+      <option value="">1</option>
+      <option value="">2</option>
+    </optgroup>
+    </select></li>
+    </div>
+
+    <br><button class="btn-enviar" type="submit" name="button">Enviar</button>
+  </form> -->
+

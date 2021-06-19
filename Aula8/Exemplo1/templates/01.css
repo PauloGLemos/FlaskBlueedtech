@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+
+.div1{
+  align-items: center;;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #A0A0A0;
+  color: 	black;
+  font-family: 'Roboto', sans-serif;
+  padding: 10px;
+  height: 100%;
+  border-radius: 10px;
+  border: none;
+}
+
+#nome,#sobrenome,#blocoHumor,#idade{
+  font-size: 20px;
+  color: #707070;
+}
+
+b{
+  padding: 10px;
+}
+
+.img1{
+  width: 50%;
+  height: 100%;
+  border-radius: 10px;
+}
+
+button{
+  padding: 30px;
+  width: 30%;
+  height: 30%;
+  font-family: 'Roboto', sans-serif;
+  font-size: 100%;
+  background-color: 	#606060;
+  color: 		#A0A0A0;
+  border: none;
+  border-radius: 5px
+}
+
+body{
+  background-color: #F0F0F0;
+}

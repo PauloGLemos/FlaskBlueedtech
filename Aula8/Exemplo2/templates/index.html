@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokedex - Blue</title>
+    <link rel="stylesheet" href="static/01.css">
+</head>
+<body>
+    <div class="bloco1">
+        <img class="logo" src="static/Blue.gif" width="200" alt="Logo da Blue"/>
+    </div>
+    
+    <div class="bloco">
+        <h1 id="pokemon-selecionado">Selecione um Pokemon</h1>
+    </div>
+
+    <div class="lista-pokemons">
+        {% for pokemon in pokemons %}
+        
+        <div class="card-pokemon" data-nome="{{ pokemon.nome }}">
+            <div class="imagem-pokemon">
+                <img class="img1 "src="{{ caminho_base }}/{{ pokemon.numero }}.png" alt="Imagem do Pokemon"/>
+            </div>
+            <div class="nome-pokemon">
+                <b>{{ pokemon.nome }}</b>
+            </div>
+        </div>
+
+        {% endfor %}
+    </div>
+
+    <script type="text/javascript" src="static/01.js"></script>
+</body>
+</html>
